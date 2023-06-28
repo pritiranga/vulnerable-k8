@@ -3,7 +3,7 @@ pipeline{
 	agent any
 	
 	tools{
-		maven 'Maven'
+		gradle 'Gradle'
 	}
     	environment {
 		DOCKERHUB = credentials('Dockerhub')
