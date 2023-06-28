@@ -51,7 +51,7 @@ pipeline{
                 	steps{
                     		echo "Deploy image to prod environment..."
                     		kubernetesDeploy(
-                        		configs: 'k8-staging.yml',
+                        		configs: 'k8-task.yml',
                         		kubeconfigId: 'k8-config',
                         		enableConfigSubstitution: true 
                     		)
